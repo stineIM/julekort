@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Julekort</title>
+</head>
+
+<body>
+    <main>
+        <div class="createCard" id="create">
+            <h1>Julekort</h1>
+            <h3>Her kan du lage ditt eget julekort. </h3>
+            <div class="inpArea">
+                <label>Overskrift: </label><br>
+                <input type="text" name="header" id="header" size="33">
+            </div>
+            <div class="inpArea">
+                <label>Tekst:</label> <br>
+                <textarea name="greeting" id="greeting"  rows="4" cols="30"></textarea>
+            </div>
+            <div class="inpArea">
+                <label>Fra: </label><br>
+                <input type="text" name="from" id="from" size="33">
+            </div>
+            <div class="inpArea">
+                <label>Bilde:</label>
+                <select name="image" id="image">
+                    <option value="1">Juletrær</option>
+                    <option value="2">Julenisse</option>
+                    <option value="3">Krans</option>
+                </select>
+            </div>
+            <div class="inpArea">
+                <label> Bakgrunnsfarge:</label>
+                <input type="color" id="bkgColor" value="#cc0000">
+            </div>
+            <div class="inpArea">
+                <label>Skriftfarge:</label>
+                <input type="color" id="fontColor">
+            </div>
+            <button onclick="createCard()" id="createBtn">Lag julekort</button>
+        </div>
+        <div class="christmasCard" id="card">
+            <img id="cardImage">
+            <h3 id="cardHeader"></h3>
+            <p id="cardGreeting"></p>
+            <p id="fromGreeting">Med vennleg helsing</p>
+            <p id="cardFrom"></p> 
+        </div>
+
+        <button id="newBtn" onclick="newCard()">Lag nytt</button>
+        <button id="printBtn" onclick="print()">Skriv ut</button>
+    </main>
+    <script type="text/javascript" src="js/card.js"></script>
+</body>
+
+</html>

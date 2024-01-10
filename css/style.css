@@ -1,0 +1,93 @@
+body {
+    background: #cb1313;
+    background: -moz-radial-gradient(center,ellipse cover,#cb1313 1%,#73050e 86%);
+    background: -webkit-radial-gradient(center,ellipse cover,#cb1313 1%,#73050e 86%); 
+    background: radial-gradient(ellipse at center,#cb1313 1%,#73050e 86%); 
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#create {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin-top: 40px;
+
+}
+
+#create label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inpArea {
+    margin-bottom: 20px;
+}
+
+.christmasCard {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    height: 600px;
+    width: 400px;
+    border: 10px solid darkgreen;
+}
+
+#cardHeader {
+    font-size: 50px;
+}
+
+#cardGreeting {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+#fromGreeting, #cardFrom {
+    margin-top: 40px;
+}
+
+#cardFrom {
+    font-family: "Dancing Script";    
+    font-size: 32px;
+}
+
+#fromGreeting {
+    font-size: 22px;
+}
+
+#cardImage {
+    width: 50%;
+    border-radius: 30px;
+}
+
+#createBtn, #printBtn, #newBtn {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+
+#printBtn, #newBtn {
+   margin-top: 30px;
+   display: none;
+   margin-right: 20px;
+   padding:20px;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+select {
+    font-size: 20px;
+    padding:5px;
+    border-radius: 5px;
+}
